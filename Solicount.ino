@@ -36,11 +36,11 @@ void loop() {
   if (digitalRead(buttonPlus)) {
     count++;
     print();
-    delay(100);
+    while (digitalRead(buttonPlus)) ;
   }
   if (digitalRead(buttonMinus)) {
     count--;
     print();
-    delay(100);
+    while (digitalRead(buttonMinus)) ;
   }
 }
